@@ -8,7 +8,8 @@ const rl = readline.createInterface({
 
 const askQuestion = (survey, questionNum) => {
   if (questionNum === Object.keys(survey).length) {
-    console.log(survey);
+    console.log(`Thanks, here's your profile!`);
+    console.log(`${survey[0].a} (${survey[1].a}) enjoys ${survey[2].a} while listening to ${survey[3].a}, loves to eat ${survey[5].a} for ${survey[4].a}, plays ${survey[6].a}, and has an uncanny knack for ${survey[7].a}.`);
     rl.close();
     return true;
   } else {
