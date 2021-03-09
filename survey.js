@@ -13,6 +13,7 @@ const askQuestion = (survey, questionNum) => {
     console.log(`${survey[0].a} (${survey[1].a}) enjoys ${survey[2].a} while listening to ${survey[3].a}, loves to eat ${survey[5].a} for ${survey[4].a}, plays ${survey[6].a}, and has an uncanny knack for ${survey[7].a}.`);
     console.log(`Enjoy!`);
     rl.close();
+    //Not sure if this is needed; just wanted to make ABSOLUTELY sure the function ends here.
     return true;
   } else {
     //Otherwise, ask the current question, with a callback function to store the question answer and ask the next question.
